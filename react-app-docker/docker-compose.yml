@@ -1,0 +1,12 @@
+version: '3'
+services:
+  todo-internal-ui:
+    container_name: todo-internal-ui
+    build: .
+    ports:
+     - "3337:3000" #expose ports - HOST:container
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - './:/usr/src/app'
+      - '/usr/src/app/node_modules'
