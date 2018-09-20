@@ -11,6 +11,10 @@ https://medium.com/@gajus/the-missing-ci-cd-kubernetes-component-helm-package-ma
 
 https://hackernoon.com/solid-principles-made-easy-67b1246bcdf
 
+http://dchua.com/2016/02/07/getting-npm-packages-to-be-installed-with-docker-compose/
+
+http://bitjudo.com/blog/2014/03/13/building-efficient-dockerfiles-node-dot-js/
+
 kubectl port-forward<<POD>> 3000:3000
 
 kubectl logs <<POD>>
