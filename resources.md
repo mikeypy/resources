@@ -1,1 +1,32 @@
+https://mherman.org/blog/developing-microservices-node-react-docker/
 
+https://www.youtube.com/watch?v=72zCyRgwUqs
+
+https://www.youtube.com/watch?v=vQX5nokoqrQ
+
+https://www.telerik.com/blogs/control-your-frontend-data-before-it-controls-you-when-to-implement-redux-in-your-react-app
+
+https://medium.com/@gajus/the-missing-ci-cd-kubernetes-component-helm-package-manager-1fe002aac680
+
+
+https://hackernoon.com/solid-principles-made-easy-67b1246bcdf
+
+kubectl port-forward<<POD>> 3000:3000
+
+kubectl logs <<POD>>
+
+kubectl exec -it <<POD>>
+
+kubectl get pods
+
+kubectl get nodes
+
+kubectl describe service <<POD>>
+
+kubectl get service -o wide
+
+
+kubectl get pods --show-labels
+
+
+kubectl get pods -o wide
