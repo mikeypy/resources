@@ -15,6 +15,8 @@ http://dchua.com/2016/02/07/getting-npm-packages-to-be-installed-with-docker-com
 
 http://bitjudo.com/blog/2014/03/13/building-efficient-dockerfiles-node-dot-js/
 
+https://medium.com/@shakyShane/lets-talk-about-docker-artifacts-27454560384f
+
 kubectl port-forward<<POD>> 3000:3000
 
 kubectl logs <<POD>>
