@@ -1,0 +1,176 @@
+#######
+ls
+#######
+ls
+
+ls -l
+
+ls -lh
+
+ls -a
+
+ls -R
+
+ls -S
+
+ls -t
+
+#########################
+$PATH and Case Sensitivity
+#########################
+env
+
+PATH
+
+echo = print what follows to the screen
+
+echo $PATH
+
+###########
+Basic Commands
+############
+whoami
+
+su - substitute user, change to another user account
+
+exit
+
+init6 -legacy command for rebooting
+
+init 0 - legacy cmd for shutting down
+
+halt,poweroff 
+
+shutdown
+
+top - top running processes on the sys.
+
+#########
+uname
+########
+uname - name of kernel
+
+uname -r - release number
+
+uname -v - build version
+
+uname -m - machine type
+
+uname -o - name of OS
+
+uname -a - all info uname can show
+
+#######
+cd and pwd
+######
+
+pwd - print working dir
+
+cd
+
+cd ..
+
+cd - __ last directory
+
+cd ~ - home directory
+
+########################
+command history and completion
+###########################
+bash_history
+
+HISTFILESIZE
+
+HISTCONTROL
+
+history
+
+!<history number>
+
+##################
+shell config files
+#################
+/etc/bashrc - system wide func and aliases
+
+/etc/profile - sys-wide env and startup programs used during a login shell
+
+/etc/profile.d/ - location of extra env scripts
+
+NB: following files are in the home dir but not all distributions will use all of these files
+------
+.bash_profile - set user specific shell env preferences
+
+.bash_logout - ran when user logout of a login shell not a terminal(does not exits on every system)
+
+.bashrc - non login file that stores user specific functions and aliases
+
+
+####################
+shell variables
+####################
+env - list out env variables
+
+echo $variable (i.e. echo $PWD, echo $OLDPWD)
+
+set - list out all env variables in alpha order
+
+VARIABLENAME = value - declaring a new variable
+
+export VARIABLE - exports variable and its value to other shells
+
+
+###############
+globbing
+################
+* - matches zero or more characters (e.g. ls *.txt, ls <directory_name>/*/)
+
+? - matches any single character (e.g ls ?.txt, ????.txt, ls text?.txt)
+
+[abc] - any one character in the list, case sensitive. ([Pp]*.csv, ls [p]*, [Ww]eather[Rr]eport199[0-9]?2017*)
+
+[^abc] - matches any one character except those in the list, case sensitive (ls [^WtTJP]*)
+
+[0-9] - matches a range of numbers
+
+################
+Quoting
+###########
+"" - (echo  "i am $LOGNAME" : - i am user)
+
+'' - treats everthing literally (echo  'i am $LOGNAME' : - i am $LOGNAME)
+
+\ - disables special character (echo  "i need \£3.50" : - i need £3.50)
+
+quotes around spaces or an escape character preceding a space will be treated literally
+
+
+##########
+formatting commands
+##########
+ls (command) -l(option) Documents(argument) - ls -l Documents
+command - what to do
+options - how to do it
+Arguments - what to do it on
+
+############
+Locate, find, whereis
+##################
+
+locate - searches a local DB of files and folders looking items that match the search criteria (locate passwd)
+
+find - same as above just more accurate result and also slow (find /home/user/.config -name '*.xml')
+
+whereis - locate binary, source and/or manual pages for a command (whereis cd)
+
+###############
+Man
+###############
+
+Man - manual pages cmd
+
+whatis - Cmd that list summaries
+
+apropos - cmd that searches man page for appearances of the keyword provided
+
+arrow keys and vi key bindings can be used to navigate the man pages, pressing 'q' key will exit the man page
+
